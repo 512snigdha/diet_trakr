@@ -1,0 +1,18 @@
+
+
+
+
+
+
+
+
+
+-create config directory
+   -db connectivity file
+   -basic blurprint of a file(import, component, export module)
+   -try catch
+   -async await
+   -import local modules
+   -install and implement cors
+   -implement json
+   
