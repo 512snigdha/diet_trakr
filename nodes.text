@@ -1,12 +1,14 @@
-
-
-
-
-
-
-
-
-
+- add package.json
+- install few neccessary pkgs
+    -dotenv, body-parser, mongoose, express, nodemon
+-create a basic server
+    -env file creation
+        -declare port
+        -call the port from env file
+    -add a notes file in .gitignore
+    -add custom command in package.json
+    -print the system variable in console
+    -initiate the server and open the po
 -create config directory
    -db connectivity file
    -basic blurprint of a file(import, component, export module)
@@ -16,3 +18,16 @@
    -install and implement cors
    -implement json
    
+   -creates models directory
+      -create person.js file
+      -create model for person database add a single model for a person
+      -read operation for sstudent model
+      -add few datatypes in the json obejxt- string,database
+      -call the model in routs
+    -add a new route
+      -all persons route
+      - CRUD method
+      -show in frontend correct output
+      respond with a json and 404  error
+      if succesful thn show a dummy output on the respective path/route
+
