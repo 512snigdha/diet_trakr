@@ -2,20 +2,24 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 
-import CreatePerson from './Components/AddPerson'
-import ShowPersonList from './Components/ShowPersonList'
-import ShowPersondetails from './Components/ShowPersondetails'
-import UpdatePersonInfo from './Components/UpdatePersonInfo'
+import CreatePerson from './components/CreatePerson';
+import ShowPersonList from './components/ShowPersonList';
+import ShowPersondetails from './components/ShowPersondetails';
+import UpdatePersoninfo from './components/UpdatePersoninfo';
+import PersonCard from './components/PersonCard'; 
+
+
 
 function App() {
   return (
     <Router>
       <div>
         <Routes>
-          <Route exact path='/' elememnt={<ShowPersonList/>}/>
-          <Route exact path='/add-person' elememnt={<CreatePerson/>}/>
-          <Route exact path='/edit-personinfo' elememnt={<UpdatePersonInfo/>}/>
-          <Route exact path='/show-person/:id' elememnt={<ShowPersondetails/>}/>
+        <Route path='/' exact element={<PersonCard/>}/>
+        <Route path='/Person-list' element={<ShowPersonList/>}/>
+        <Route path='/add-person' element={<CreatePerson/>}/>
+        <Route path='/edit-person-info' element={<UpdatePersoninfo/>}/>
+        <Route path='/show-person/:id' element={<ShowPersondetails/>} />
         </Routes>
       </div>
       
