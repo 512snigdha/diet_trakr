@@ -15,7 +15,7 @@ function App() {
     <Router>
       <div>
         <Routes>
-        <Route path='/' exact element={<PersonCard/>}/>
+        <Route exact path='/' element={<PersonCard/>}/>
         <Route path='/Person-list' element={<ShowPersonList/>}/>
         <Route path='/add-person' element={<CreatePerson/>}/>
         <Route path='/edit-person-info' element={<UpdatePersoninfo/>}/>

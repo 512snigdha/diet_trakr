@@ -3,16 +3,16 @@
 //import axios from 'axios';
 //import '../App.css';
 
-function UpdatePersoninfo(props) {
-    return (
-      <div className='UpdatePersoninfo'>
-        <div className='container'>
-          <div className='row'>
-            <h1>This is update Person page</h1>
-          </div>
-        </div>
-      </div>
-    );
-  }
+// function UpdatePersoninfo(props) {
+//     return (
+//       <div className='UpdatePersoninfo'>
+//         <div className='container'>
+//           <div className='row'>
+//             <h1>This is update Person page</h1>
+//           </div>
+//         </div>
+//       </div>
+//     );
+//   }
   
-  export default UpdatePersoninfo;
+//   export default UpdatePersoninfo;
