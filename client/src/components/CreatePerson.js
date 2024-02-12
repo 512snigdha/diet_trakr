@@ -2,6 +2,8 @@ import React, { usestate } from 'react';
 import  { Link } from 'react-router-dom';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import Navbar from './Navbar';
+import Footer from './footer';
 
 
 
@@ -32,6 +34,7 @@ const CreatePerson = () => {
     }
     return (
         <div className='CreatePerson'>
+          <Navbar/>
             <div className='Container'>
             <div className="row">
           <div className='col-md-8 m-auto'>
@@ -60,6 +63,7 @@ const CreatePerson = () => {
               </div>
             </div>
         </div>
+        <Footer/>
         </div>
     )
 }
