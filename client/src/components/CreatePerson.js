@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import  { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import Navbar from './Navbar';
@@ -10,16 +10,16 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 
-const CreatePerson = () => {
+const CreatePerson = (props) => {
   const navigate = useNavigate();
   const [person, setPerson] = useState({
-    Name: '',
-    Age: '',
-    Gender: '',
-    Height: '',
-    Weight: '',
-    PhnNo: '' ,
-    Date: ""
+    name: '',
+    age: '',
+    gender: '',
+    height: '',
+    weight: '',
+    phnno: '',
+    date: '',
   });
   const [showToast, setShowToast] = useState(false);
 
@@ -27,23 +27,23 @@ const CreatePerson = () => {
     setPerson({ ...person, [e.target.name]: e.target.value });
   };
 
-    const onSubmit = (e) => {
-        // Prevent the page from refreshing
+  const onSubmit = (e) => {
+    // Prevent the page from refreshing
 
-        e.preventDefault()
-        //Api calls with the help of axios
+    e.preventDefault()
+    //Api calls with the help of axios
 
-        axios.post("api/persons", person)
-        .then((res) => {
-      
+    axios.post('api/persons', person)
+      .then((res) => {
+
         setPerson({
-          Name: '',
-          Age: '',
-          Gender: '',
-          Height: '',
-          Weight: '',
-          PhnNo: '' ,
-          Date: ""
+          name: '',
+          age: '',
+          gender: '',
+          height: '',
+          weight: '',
+          phnno: '',
+          date: '',
         })
         toast.success('persons info added successfully!', {
           position: "top-right",
@@ -55,18 +55,18 @@ const CreatePerson = () => {
           progress: undefined,
           theme: "dark",
           transition: Slide,
-          });
-  
+        });
+
         // Delay the navigation slightly to allow the toast to be seen
         setTimeout(() => {
           setShowToast(false); // Hide the toast
           navigate('/'); // Navigate to homepage
-        },  5000); // Adjust the timeout as needed
+        }, 5000); // Adjust the timeout as needed
 
       })
       .catch((err) => {
         console.log('Error in CreatePerson!');
-        console.log('The error is -> ')
+        console.log('The error is ->')
         console.log(err)
         // Show the success alert
         toast.error('Something went wrong, try again!', {
@@ -79,17 +79,17 @@ const CreatePerson = () => {
           progress: undefined,
           theme: "dark",
           transition: Slide,
-          });
+        });
       });
   };
-      
 
-        
-    
-    return (
-        <div className='CreatePerson'>
-          <Navbar/>
-          <ToastContainer
+
+
+
+  return (
+    <div className='CreatePerson'>
+      <Navbar />
+      <ToastContainer
         position="top-right"
         autoClose={5000}
         hideProgressBar={false}
@@ -102,16 +102,16 @@ const CreatePerson = () => {
         theme="light"
         transition={Slide}
       />
-            <div className='Container'>
-            <div className="row">
+      <div className='Container'>
+        <div className="row">
           <div className='col-md-8 m-auto'>
             <br />
-            <Link to='/Person-list' className='btn btn-outline-warning float-left'>
+            <Link to='/person-list' className='btn btn-outline-warning float-left'>
               Show Persons List
             </Link>
-                </div>
+          </div>
 
-                <div className='col-md-8 m-auto'>
+          <div className='col-md-8 m-auto'>
             <h1 className='display-4 text-center'>Add person</h1>
             <p className='lead text-center'>Create new Person</p>
 
@@ -119,80 +119,85 @@ const CreatePerson = () => {
               <div className='form-group'>
                 <input
                   type='text'
-                  placeholder='Name'
-                  name='Name'
+                  placeholder='name'
+                  name='name'
                   className='form-control'
-                  value={personalbar.name}
+                  value={person.name}
                   onChange={onChange}
                 />
-              </div> 
+              </div>
               <div className='form-group'>
                 <input
                   type='number'
-                  placeholder='Age'
-                  name='Age'
+                  placeholder='age'
+                  name='age'
                   className='form-control'
-                  value={personalbar.name}
+                  value={person.age}
                   onChange={onChange}
                 />
-              </div> 
+              </div>
               <div className='form-group'>
                 <input
                   type='text'
-                  placeholder='Gender'
-                  name=''
+                  placeholder='gender'
+                  name='gender'
                   className='form-control'
-                  value={personalbar.name}
+                  value={personalbar.gender}
                   onChange={onChange}
                 />
-              </div> 
+              </div>
               <div className='form-group'>
                 <input
                   type='number'
-                  placeholder='Height'
-                  name='Height'
+                  placeholder='height'
+                  name='height'
                   className='form-control'
-                  value={personalbar.name}
+                  value={person.height}
                   onChange={onChange}
                 />
-              </div> 
+              </div>
               <div className='form-group'>
                 <input
                   type='number'
-                  placeholder='Weight'
+                  placeholder='weight'
                   name='weight'
                   className='form-control'
-                  value={personalbar.name}
+                  value={person.weight}
                   onChange={onChange}
                 />
-              </div> 
+              </div>
               <div className='form-group'>
                 <input
                   type='number'
                   placeholder='Contact no.'
-                    name='phone no'
+                  name='phnno'
                   className='form-control'
-                  value={personalbar.name}
+                  value={person.phnno}
                   onChange={onChange}
                 />
-              </div> 
+              </div>
               <div className='form-group'>
                 <input
                   type='date'
                   placeholder='Date the person started dieting'
-                  name='Date'
+                  name='date'
                   className='form-control'
-                  value={personalbar.name}
+                  value={person.date}
                   onChange={onChange}
                 />
-              </div> 
-              </form>
               </div>
-            </div>
+              <input
+                type='submit'
+                className='btn btn-outline-warning btn-block mt-4'
+              />
+
+            </form>
+          </div>
         </div>
-        <Footer/>
-        </div>
-    )
+      </div>
+      <Footer />
+    </div>
+  )
 }
 
-export default CreatePerson ;
+export default CreatePerson;

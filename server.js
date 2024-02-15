@@ -3,8 +3,9 @@ const connectDB = require("./config/db");
 const cors = require("cors");
 const persons = require("./routes/api/persons");
 const path=require('path');
+require('dotenv').config({path: "./.env"})
 //Connecting to MONGODB
-//connectDB();
+connectDB();
 
 
 

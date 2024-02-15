@@ -16,7 +16,7 @@ function App() {
       <div>
         <Routes>
         <Route exact path='/' element={<PersonCard/>}/>
-        <Route path='/Person-list' element={<ShowPersonList/>}/>
+        <Route path='/person-list' element={<ShowPersonList/>}/>
         <Route path='/add-person' element={<CreatePerson/>}/>
         <Route path='/edit-person-info' element={<UpdatePersoninfo/>}/>
         <Route path='/show-person/:id' element={<ShowPersondetails/>} />
