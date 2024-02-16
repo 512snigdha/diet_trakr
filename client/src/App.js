@@ -18,7 +18,7 @@ function App() {
         <Route exact path='/' element={<PersonCard/>}/>
         <Route path='/person-list' element={<ShowPersonList/>}/>
         <Route path='/add-person' element={<CreatePerson/>}/>
-        <Route path='/edit-person-info' element={<UpdatePersoninfo/>}/>
+        <Route path='/edit-person-info/:id' element={<UpdatePersoninfo/>}/>
         <Route path='/show-person/:id' element={<ShowPersondetails/>} />
         </Routes>
       </div>

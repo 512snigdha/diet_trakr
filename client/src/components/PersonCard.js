@@ -11,7 +11,7 @@ const PersonCard = (props) => {
   return (
     <div className='card-container'>
       <img
-        src='https://img.freepik.com/premium-photo/teenager-student-girl-yellow-pointing-finger-side_1368-40175.jpg?size=626&ext=jpg&ga=GA1.1.87170709.1707868800&semt=sph'
+        src='https://cdn.aarp.net/content/dam/aarp/health/healthy-living/2017/05/1140-calorie-counting-app.imgcache.rev62ecd194605c05dfff72b7963164dd1d.jpg'
         alt='Persons'
         height={200}
       />
