@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import { Slide, ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import { useNavigate } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './footer';
-import { Slide, ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+
 
 
 
@@ -22,6 +24,7 @@ const CreatePerson = (props) => {
     date: '',
   });
   const [showToast, setShowToast] = useState(false);
+
 
   const onChange = (e) => {
     setPerson({ ...person, [e.target.name]: e.target.value });
@@ -142,7 +145,7 @@ const CreatePerson = (props) => {
                   placeholder='gender'
                   name='gender'
                   className='form-control'
-                  value={personalbar.gender}
+                  value={person.gender}
                   onChange={onChange}
                 />
               </div>

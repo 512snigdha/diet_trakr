@@ -21,7 +21,7 @@ function ShowPersonList() {
       });
   }, []);
 
-  // persons list find if their record is present or not , if present then map the person details
+  // personList finds if there any person details present or not, if present then map the person details using map()
   const personList =
     persons.length === 0
       ? 'there is no person record!'
@@ -40,10 +40,10 @@ function ShowPersonList() {
 
           <div className='col-md-11'>
             <Link
-              to='/create-book'
-              className='btn btn-outline-warning float-right'
+              to='/add-person'
+              className='btn btn-outline-info float-right'
             >
-              + Add New data
+              + Add New Person
             </Link>
             <br />
             <br />
@@ -53,6 +53,7 @@ function ShowPersonList() {
 
         <div className='list'>{personList}</div>
       </div>
+      <br />
 
       <Footer />
     </div>
