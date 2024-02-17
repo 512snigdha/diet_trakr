@@ -1,13 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import '../App.css'
-import NavBar from './NavBar';
+import Navbar from './Navbar';
 import Footer from './footer';
 
 const Home = (props) => {
   return (
     <div className='Home'>
-      <NavBar />
+      <Navbar />
       <div className='container'>
         <div className='row'>
           <div className='bg'></div>
