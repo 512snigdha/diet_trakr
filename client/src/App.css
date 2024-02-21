@@ -29,17 +29,27 @@
 }
 
 .Home{
-  background-image: url('https://www.shutterstock.com/shutterstock/photos/2313671175/display_1500/stock-photo-close-up-woman-using-meal-tracker-app-on-phone-while-eating-salad-at-picnic-table-in-the-park-on-a-2313671175.jpg');
+  
   min-height: 100vh;
   color: black;
-  background-size: cover;
+  animation: bg 10s ease infinite;
 }
-
+@keyframes bg {
+  0%   { 
+    background: url(https://www.shutterstock.com/shutterstock/photos/2313671175/display_1500/stock-photo-close-up-woman-using-meal-tracker-app-on-phone-while-eating-salad-at-picnic-table-in-the-park-on-a-2313671175.jpg); 
+    background-size: cover;
+  }
+  100%  { 
+    background: url(https://t3.ftcdn.net/jpg/03/00/02/14/360_F_300021453_gRkO1XAVKwXveQjRFDpfTjD00UW5YFg5.jpg); 
+    background-size: cover;
+  
+  }
+}
 .web-desc{
   height: auto;
   justify-self: center;
   display: block;
-  background-color: rgba(245, 238, 238, 0.5);
+  background-color: rgba(39, 143, 190, 0.74);
   color: black;
   font-weight: bold;
   position: absolute;
@@ -53,7 +63,7 @@
 }
 
 .heading{
-  color:#421e86;
+  color:#000000ee;
   font-weight: bold;
 }
 
