@@ -15,6 +15,9 @@ const Home = (props) => {
             <h1 className='display-5 text-center heading'>DIET TRACKER</h1>
             <h6 className='lead text-center'>Welcome To Our Website...!</h6>
             <p className='lead text-center'>This can help the person for maintaining their diet schedule</p>
+            <Link to='/person-list' className='btn btn-outline-warning'>
+              Get Started
+            </Link>
           </div>
         </div>
       </div>

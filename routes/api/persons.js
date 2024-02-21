@@ -56,10 +56,8 @@ router.put('/:id', (req, res) => {
 // @access Public
 // READ, DELETE & SEARCH operation
 router.delete('/:id', (req, res) => {
-    Person.findByIdAndRemove(req.params.id, req.body)
-        .then((person) => res.json({ OK: 'Person details deleted successfully'}))
-        .catch((err) => res.status(400).json({ error: 'Unable to delete the Person details' }))
-        // res.json({ OK: "Delete Person route is working fine"})
-})
-
+    Person.findByIdAndDelete(req.params.id, req.body)
+      .then((person) => res.json({ mgs: 'Persons data deleted successfully' }))
+      .catch((err) => res.status(404).json({ error: 'No such a person' }));
+});
 module.exports = router;

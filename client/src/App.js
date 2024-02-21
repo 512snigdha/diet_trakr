@@ -7,7 +7,7 @@ import ShowPersonList from './components/ShowPersonList';
 import ShowPersondetails from './components/ShowPersondetails';
 import UpdatePersoninfo from './components/UpdatePersoninfo';
 import Home from './components/Homepage';
-
+import AllRoutes from './components/Route';
 
 
 function App() {
@@ -20,6 +20,7 @@ function App() {
         <Route path='/add-person' element={<CreatePerson/>}/>
         <Route path='/edit-person-info/:id' element={<UpdatePersoninfo/>}/>
         <Route path='/show-person/:id' element={<ShowPersondetails/>} />
+        <Route path='/routes' element={<AllRoutes />} />
         </Routes>
       </div>
       
