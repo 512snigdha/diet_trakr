@@ -8,25 +8,28 @@ const Navbar = () => (
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Home</a>
+                <a class="nav-link active" aria-current="page" href="/"><i class="fa fa-home"></i> Home</a>
                 </li>
                 <li class="nav-item">
             <a class="nav-link" href="/routes">
-              <i class="fas fa-route"></i> Routes 
+            <i class="fas fa-route" ></i> Routes 
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://docs.google.com/document/d/e/2PACX-1vTza-VByYmeVN_sfN0TmhxUqBevoLPNoThBDt-9SJDnCfElms4xOLf3ADJPrGXUcqeFCEw4N-KBW356/pub" target="_blank" rel="noopener noreferrer">
-              <i class="fas fa-file"></i> Document 
-            </a>
+            <i class="fas fa-file"></i> Document </a>
           </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#"><i class="fas fa-list" ></i>  Features</a>
+                </li>
+                
+                <li class="nav-item">
+                <a class="nav-link" href="/"> <i class="fa-solid fa-blog"></i>Blog</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="/">Blog</a>
+                <a class="nav-link" href="https://github.com/512snigdha/diet_trakr"><i class="fab fa-github" ></i> GitHub</a>
                 </li>
             </ul>
             </div>

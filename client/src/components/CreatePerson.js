@@ -128,7 +128,7 @@ const CreatePerson = (props) => {
                   value={person.name}
                   onChange={onChange}
                 />
-              </div>
+              </div> <br/>
               <div className='form-group'>
                 <input
                   type='number'
@@ -138,7 +138,7 @@ const CreatePerson = (props) => {
                   value={person.age}
                   onChange={onChange}
                 />
-              </div>
+              </div><br/>
               <div className='form-group'>
                 <input
                   type='text'
@@ -148,7 +148,7 @@ const CreatePerson = (props) => {
                   value={person.gender}
                   onChange={onChange}
                 />
-              </div>
+              </div><br/>
               <div className='form-group'>
                 <input
                   type='number'
@@ -158,7 +158,7 @@ const CreatePerson = (props) => {
                   value={person.height}
                   onChange={onChange}
                 />
-              </div>
+              </div><br/>
               <div className='form-group'>
                 <input
                   type='number'
@@ -168,7 +168,7 @@ const CreatePerson = (props) => {
                   value={person.weight}
                   onChange={onChange}
                 />
-              </div>
+              </div><br/>
               <div className='form-group'>
                 <input
                   type='number'
@@ -178,7 +178,7 @@ const CreatePerson = (props) => {
                   value={person.phnno}
                   onChange={onChange}
                 />
-              </div>
+              </div><br/>
               <div className='form-group'>
                 <input
                   type='date'
@@ -188,13 +188,11 @@ const CreatePerson = (props) => {
                   value={person.date}
                   onChange={onChange}
                 />
-              </div>
-              <input
+              </div><input
                 type='submit'
                 className='btn btn-outline-warning btn-block mt-4'
               />
-
-            </form>
+             </form>
           </div>
         </div>
       </div>

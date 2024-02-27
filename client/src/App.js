@@ -8,6 +8,7 @@ import ShowPersondetails from './components/ShowPersondetails';
 import UpdatePersoninfo from './components/UpdatePersoninfo';
 import Home from './components/Homepage';
 import AllRoutes from './components/Route';
+import Tech from './components/Technology'
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path='/edit-person-info/:id' element={<UpdatePersoninfo/>}/>
         <Route path='/show-person/:id' element={<ShowPersondetails/>} />
         <Route path='/routes' element={<AllRoutes />} />
+        <Route path='/tech' element={<Tech />} />
         </Routes>
       </div>
       

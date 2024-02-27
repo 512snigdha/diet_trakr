@@ -1,3 +1,8 @@
+
+
+
+
+
 .App {
   text-align: center;
 }
@@ -45,7 +50,7 @@
   
   }
 }
-.web-desc{
+.web-desc {
   height: auto;
   justify-self: center;
   display: block;
@@ -63,7 +68,18 @@
 }
 
 .heading{
+  font-size: 1em;
+  font-weight: 400;
+  padding: rgb(101, 182, 97) 20px;
+  font-size: 80px;
   color:#000000ee;
+  text-align: center;
+  -webkit-animation: DIET 1s ease-in-out infinite alternate;
+  -moz-animation: DIET 1s ease-in-out infinite alternate;
+  animation: DIET 1s ease-in-out infinite alternate;
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-weight: bold;
 }
 
@@ -85,6 +101,7 @@
   background-color: #5083fa;
   font-weight: bold;
 }
+
 
 .CreatePerson {
   background-color: #03071e;
